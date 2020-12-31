@@ -1,0 +1,19 @@
+{
+    "version": "0.0.1",
+    "npmClient": "yarn",
+    "command": {
+        "version": {
+            "push": false
+        },
+        "publish": {
+            "registry": "https://npm.pkg.github.com",
+            "ignoreChanges": ["**/docs/**", "*.md", "**/test/**", "**/deploy/**"],
+            "message": "release"
+        },
+        "bootstrap": {
+            "npmClientArgs": ["--no-lockfile"]
+        }
+    },
+    "useWorkspaces": true,
+    "packages": ["packages/*"]
+}

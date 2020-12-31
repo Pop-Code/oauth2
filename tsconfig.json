@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "resolveJsonModule": true,
+        "declaration": true,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noLib": false,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "sourceMap": true,
+        "declarationMap": true,
+        "outDir": "./build",
+        "lib": ["es2020"],
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "baseUrl": ".",
+        "strictNullChecks": true,
+        "paths": {
+            "@pop-code/oauth2-common": ["packages/common/src"],
+            "@pop-code/oauth2": ["packages/core/src"],
+            "@pop-code/oauth2-client-credentials": ["packages/client-credentials/packages/core/src"],
+            "@pop-code/oauth2-client-credentials-express": ["packages/client-credentials/packages/express/src"],
+            "@pop-code/oauth2-client-credentials-fastify": ["packages/client-credentials/packages/fastify/src"]
+        }
+    },
+    "exclude": ["node_modules"]
+}

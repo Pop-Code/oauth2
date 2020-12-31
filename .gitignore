@@ -1,0 +1,12 @@
+build/
+artifacts/
+node_modules/
+coverage/
+*.log
+.terraform
+**/config/production.json
+*.tgz
+*.zip
+packages/api/schema.gql
+.DS_Store
+**/test/contracts/*.pdf
