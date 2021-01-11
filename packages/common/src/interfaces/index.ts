@@ -5,3 +5,4 @@ export * from './reponse';
 export * from './token';
 export * from './options';
 export * from './client';
+export * from './provider';

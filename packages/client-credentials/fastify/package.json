@@ -1,0 +1,33 @@
+{
+    "name": "@pop-code/oauth2-client-credentials-fastify",
+    "version": "0.0.1",
+    "description": "The OAuth2 Grant Client Credentials fastify package",
+    "author": "Pop-Code <contact@pop-code.com>",
+    "license": "MIT",
+    "main": "build/index.js",
+    "types": "build/index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "ssh://git@github.com/pop-code/oauth2.git",
+        "directory": "packages/client-credentials/packages/fastify"
+    },
+    "scripts": {
+        "build": "rm -Rf build && tsc -p ./tsconfig.build.json",
+        "watch": "tsc -p ./tsconfig.build.json -w",
+        "start": "ts-node -r tsconfig-paths/register ./exemple/server"
+    },
+    "dependencies": {
+        "@pop-code/oauth2-common": "0.0.1",
+        "@pop-code/oauth2-client-credentials": "0.0.1",
+        "class-transformer": "0.3.1",
+        "class-validator": "0.12.2",
+        "lodash": "4.17.20",
+        "reflect-metadata": "0.1.13"
+    },
+    "devDependencies": {
+        "fastify": "3.9.2",
+        "fastify-express": "0.3.2",
+        "form-auto-content": "2.1.0",
+        "fastify-formbody": "5.0.0"
+    }
+}

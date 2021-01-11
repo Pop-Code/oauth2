@@ -2,7 +2,8 @@
     "private": true,
     "workspaces": [
         "packages/*",
-        "packages/**/packages/*"
+        "packages/client-credentials/*",
+        "packages/authorization-code/*"
     ],
     "repository": "https://github.com/pop-code/oauth2.git",
     "scripts": {

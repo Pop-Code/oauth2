@@ -4,7 +4,7 @@ import { InvalidRequestError } from '../errors';
 import { OAuth2ClientCredentials } from '../interfaces';
 
 export const createOAuth2ClientBacicToken = (credentials: OAuth2ClientCredentials) =>
-    encodeURIComponent(credentials.clientId) + ':' + encodeURIComponent(credentials.clientSecret);
+    encodeURIComponent(credentials.clientId) + ':' + encodeURIComponent(credentials.clientSecret as string);
 
 export const decodeOAuth2ClientBacicToken = (authorizationHeader: string): OAuth2ClientCredentials => {
     const authParts = authorizationHeader.split(' ');
