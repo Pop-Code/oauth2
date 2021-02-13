@@ -5,4 +5,5 @@ export interface OAuth2Client {
     getSecret: () => string;
     getSupportedGrantTypes: () => Array<GrantType | string>;
     getSupportedScopes: () => string[];
+    getSupportedRedirectUris?: () => string[];
 }

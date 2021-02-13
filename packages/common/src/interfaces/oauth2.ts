@@ -33,9 +33,4 @@ export interface OAuth2Interface<C extends OAuth2Client, T extends OAuth2Token, 
      * Check the request
      */
     checkRequest: (request: R) => Promise<void>;
-
-    /**
-     * Get the access token from the request
-     */
-    getAccessTokenFromRequest: (request: R) => Promise<string | undefined>;
 }

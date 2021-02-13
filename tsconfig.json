@@ -21,9 +21,11 @@
         "paths": {
             "@pop-code/oauth2-common": ["packages/common/src"],
             "@pop-code/oauth2": ["packages/core/src"],
-            "@pop-code/oauth2-client-credentials": ["packages/client-credentials/packages/core/src"],
-            "@pop-code/oauth2-client-credentials-express": ["packages/client-credentials/packages/express/src"],
-            "@pop-code/oauth2-client-credentials-fastify": ["packages/client-credentials/packages/fastify/src"]
+            "@pop-code/oauth2-authorization-code": ["packages/authorization-code/core/src"],
+            "@pop-code/oauth2-authorization-code-express": ["packages/authorization-code/express/src"],
+            "@pop-code/oauth2-client-credentials": ["packages/client-credentials/core/src"],
+            "@pop-code/oauth2-client-credentials-express": ["packages/client-credentials/express/src"],
+            "@pop-code/oauth2-client-credentials-fastify": ["packages/client-credentials/fastify/src"]
         }
     },
     "exclude": ["node_modules"]

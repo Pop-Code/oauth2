@@ -1,4 +1,4 @@
 export interface OAuth2ClientCredentials {
     clientId: string;
-    clientSecret: string;
+    clientSecret?: string;
 }
